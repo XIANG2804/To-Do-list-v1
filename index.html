@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<!--
+(必要)
+还要写个能backup成Excel-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="todo">
+                <h1>To Do List</h1>
+
+                <div class="form">
+                    <input type="file" id="excelFile" class="file-input" accept=".xlsx, .xls">
+                    <button class="import-button" id="importButton">导入</button>
+                    <button class="export-button" id="exportButton">导出</button>
+                </div>
+
+                <div class="input-area">
+                    <input type="text" id="word">
+                    <button class="add-button" id="addButton">
+                        <img src="./icons/plus.png">
+                    </button>
+                    <button id="resetButton" class="reset-button">
+                        <img src="./icons/reset.png">
+                    </button>
+                </div>
+
+                <div id="task_list"></div>
+                <div id="toast"></div>
+            </div>
+        </div>
+    </main>
+<script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
+<script src="javascript.js"></script>
+
+</body>
+
+</html>

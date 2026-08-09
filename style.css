@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(225deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+}
+
+.container {
+    width: 500px;
+    height: auto;
+    border-radius: 25px;
+    padding: 30px;
+    background-color: whitesmoke;
+}
+
+.todo {
+    width: 100%;
+}
+
+h1 {
+    margin: 10px 0;
+
+}
+
+.input-area input {
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 5px 5px 5px 10px;
+    margin: 10px 5px 10px 0;
+    flex: 1;
+}
+
+.input-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-area button {
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+img {
+    width: 25px;
+    height: 25px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.file-input {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    border: 1px solid black;
+
+}
+
+.import-button {
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(54, 241, 63);
+    color: black;
+}
+
+.export-button {
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(241, 74, 74);
+    color: white;
+}
+
+.completed {
+    color: gray;
+    text-decoration: line-through;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    background-color: rgb(228, 230, 227);
+    font-size: 16px;
+    padding: 5px 5px 5px 10px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+.delete-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+span {
+    padding: 5px 5px 5px 5px;
+    flex: 1;
+}
+
+#toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+
+    opacity: 0;
+    pointer-events: none;
+}
