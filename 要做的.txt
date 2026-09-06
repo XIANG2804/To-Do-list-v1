@@ -1,0 +1,5 @@
+To Do List v2要更新
+1. Enter 新增 Task
+2. 日期  时间
+3. Drag & Drop
+4. 减少重复代码 (比如添加task直接用function createTask();就好)
