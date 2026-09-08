@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
-<!--
-(必要)
-还要写个能backup成Excel-->
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -18,22 +15,22 @@
                 <h1>To Do List</h1>
 
                 <div class="form">
-                    <input type="file" id="excelFile" class="file-input" accept=".xlsx, .xls">
-                    <button class="import-button" id="importButton">导入</button>
-                    <button class="export-button" id="exportButton">导出</button>
+                    <input type="file" id="excel-file" class="file-input" accept=".xlsx, .xls">
+                    <button class="import-button" id="import-button">导入</button>
+                    <button class="export-button" id="export-button">导出</button>
                 </div>
 
                 <div class="input-area">
                     <input type="text" id="word">
-                    <button class="add-button" id="addButton">
+                    <button class="add-button" id="add-button">
                         <img src="./icons/plus.png">
                     </button>
-                    <button id="resetButton" class="reset-button">
+                    <button class="reset-button" id="reset-button">
                         <img src="./icons/reset.png">
                     </button>
                 </div>
 
-                <div id="task_list"></div>
+                <div id="task-list"></div>
                 <div id="toast"></div>
             </div>
         </div>
